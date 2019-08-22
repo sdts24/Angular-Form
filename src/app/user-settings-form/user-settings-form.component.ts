@@ -19,6 +19,8 @@ export class UserSettingsFormComponent implements OnInit {
     note: null    
   };
 
+  singleModel = "On";
+
   subscriptionTypes: Observable<string[]>;
 
   userSettings: UserSettings = {...this.originalUserSettings};

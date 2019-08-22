@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserSettingsFormComponent } from './user-settings-form/user-settings-form.component';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { TimepickerModule } from 'ngx-bootstrap/timepicker';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +18,9 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    ButtonsModule.forRoot()
+    ButtonsModule.forRoot(),
+    BsDatepickerModule.forRoot(),
+    TimepickerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

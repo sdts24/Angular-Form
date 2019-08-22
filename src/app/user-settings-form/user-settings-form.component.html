@@ -13,6 +13,20 @@
             </div>
         </div>
 
+        <timepicker [(ngModel)]="mytime"></timepicker>
+        <pre class="alert alert-info">Time is: {{mytime}}</pre>
+
+        <div class="form-group">
+                <label for="startDate">Start Date</label>
+                <input type="text"
+                    placeholder="Datepicker"
+                    class="form-control"
+                    name="startDate" id="startDate"
+                    [(ngModel)]="startDate"  bsDatepicker>
+                    Start Date: {{ startDate }}
+        </div>
+                        
+
         <button type="button" class="btn btn-primary" name="singleModel"
         [(ngModel)]="singleModel" btnCheckbox 
         btnCheckboxTrue="On" btnCheckboxFalse="Off">
@@ -31,7 +45,7 @@
         <div class="form-group">
 
                 <div class="btn-group">
-                    
+
                         <label class="btn btn-primary" [(ngModel)]="userSettings.interfaceStyle" name="interfaceStyle"
                                btnRadio="Light" tabindex="0" role="button">Light</label>
                         <label class="btn btn-primary" [(ngModel)]="userSettings.interfaceStyle" name="interfaceStyle"

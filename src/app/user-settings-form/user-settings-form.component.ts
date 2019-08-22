@@ -18,7 +18,8 @@ export class UserSettingsFormComponent implements OnInit {
     subscriptionType: null,
     note: null    
   };
-
+  startDate: Date;
+  mytime: Date;
   singleModel = "On";
 
   subscriptionTypes: Observable<string[]>;
@@ -29,6 +30,8 @@ export class UserSettingsFormComponent implements OnInit {
 
   ngOnInit() {
     this.dataService.getSubscriptionTypes();
+    this.mytime = new Date();
+    this.startDate = new Date();  
   }
 
   onSubmit(form: NgForm){
